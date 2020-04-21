@@ -1,0 +1,23 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24 feb. 2020, 10:34:01
+    Author     : saul
+*/
+
+header{
+    height: 30px;
+    width: 100%;
+    background: #D8DEE9;
+    border : solid 1px #3d62f5;
+    font-size: 3em;
+}
+
+h1.title{
+    font-size: 3em;
+    color: blue;
+    font-weight: bold;
+}
