@@ -33,8 +33,19 @@ class LoginController extends Controller
      *
      * @return void
      */
-    public function __construct()
-    {
+    public function __construct(){
         $this->middleware('guest')->except('logout');
+    }
+    
+    public function altaUser(Request $datos){
+        //dd($datos->all());
+        $user = new Usuario();
+        $user->nombre = $datos->input('nombre');
+        $user->user = $datos->input('user');
+        $user->pass = $datos->input('pass');
+        $user->email = $datos->input('email');
+        $user->rol = $datos->input('rol');
+        $user->save();
+        //$usuario = Usuario::create($datos->all());
     }
 }

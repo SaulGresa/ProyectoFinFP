@@ -12,16 +12,13 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="css/estilo.css" />
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
     </head>
     <body>
+         @yield("contenido")
         <nav>
-            <a href="http://localhost:8000/index">Inicio</a>
-            <a href="http://localhost:8000/about">About</a>
-            <a href="http://localhost:8000/contacta">Contacta</a>
-            <a href="http://localhost:8000/noticias">Noticias</a>
+            <a href="http://localhost:8000/index"><input type="button" value="Volver a Inicio"></a>
         </nav>
-        <h1>BIENVENIDOS A PROMANAGING</h1>
-        @yield("contenido")
+       
     </body>
 </html>

@@ -8,16 +8,47 @@ and open the template in the editor.
     Author     : saul
 */
 
-header{
-    height: 30px;
-    width: 100%;
-    background: #D8DEE9;
-    border : solid 1px #3d62f5;
-    font-size: 3em;
+body{
+    text-align: center;
+    background-color: #ffdf8e;
 }
 
-h1.title{
-    font-size: 3em;
+.header{
+    background-color: palegreen;
+}
+
+#logo{
+    width: 25%;
+}
+
+.messages{
     color: blue;
-    font-weight: bold;
+}
+.botonesAcceso{
+    position: absolute;
+    right: 30px;
+    bottom: 870px;
+}
+
+#propuesta{
+    width: 50%;
+    background-color: white;
+    margin: auto;
+}
+
+#desc{
+    height: 200px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.centro{
+    position: absolute;
+    top: 30%;
+    left: 41%;
+}
+
+.arrastra{
+    height: 400px;
+    width: 600px;
 }

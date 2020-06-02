@@ -4,10 +4,11 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/home/saul/Proyecto/app/Http/Controllers/ControllerEmpresa.php</file>
-            <file>file:/home/saul/Proyecto/resources/views/index.blade.php</file>
-            <file>file:/home/saul/Proyecto/resources/views/layout.blade.php</file>
-            <file>file:/home/saul/Proyecto/resources/views/prueba/gestiona.blade.php</file>
+            <file>file:/home/saul/Proyecto/app/Http/Controllers/UsuariosController.php</file>
+            <file>file:/home/saul/Proyecto/app/Http/Controllers/ProyectosController.php</file>
+            <file>file:/home/saul/Proyecto/app/Proyecto.php</file>
             <file>file:/home/saul/Proyecto/routes/web.php</file>
+            <file>file:/home/saul/Proyecto/resources/views/manage/proyecto.blade.php</file>
         </group>
     </open-files>
 </project-private>

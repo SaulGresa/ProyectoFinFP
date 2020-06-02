@@ -5,6 +5,7 @@ namespace Illuminate\Foundation\Auth;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
+use App\Http\Controllers\ControllerEmpresa;
 
 trait AuthenticatesUsers
 {
@@ -15,10 +16,39 @@ trait AuthenticatesUsers
      *
      * @return \Illuminate\Http\Response
      */
-    public function showLoginForm()
+    public function sesion()
     {
-        return view('auth.login');
+        return view("funcionalidades.inicioSesion");
     }
+
+     // Aquí validamos los campos del login.
+    public function postLogin(Request $datos)
+    {
+        $this->validate($datos, [
+            'usuario' => 'required|max:45',
+            'contra' => 'required|min:6|max:45',
+        ]);
+        
+        if ($datos->get('rol') == "Administrador"){
+            return view("roles.admin");
+        }else if ($datos->get('rol') == "Profesor"){
+            return view("roles.profesor");
+        }else{
+            return view("roles.alumno");
+        }   
+    }
+    
+//        $credentials = $this->getCredentials($datos);
+//
+//        if (Auth::attempt($credentials, $datos->has('remember'))) {
+//            return redirect()->intended($this->redirectPath());
+//        }
+//
+//        return redirect($this->loginPath())
+//            ->withInput($request->only('email', 'remember'))
+//            ->withErrors([
+//                'email' => $this->getFailedLoginMessage(),
+//            ]);}
 
     /**
      * Handle a login request to the application.
