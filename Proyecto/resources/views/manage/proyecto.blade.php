@@ -2,10 +2,9 @@
 @section ("app")
 
 <div class="centro">
-    <form action="" method="POST">
+    <form action="proyecto" method="POST">
     @csrf
     <p>Título <input type="text" placeholder="Título del proyecto" name="titulo"></p>
-    <p>Usuario <input type="text"  placeholder="Nombre de usuario" name="usuario"></p>
     <p>Sector <input type="text"  placeholder="Sector del proyecto" name="sector"></p>
     Ciclo
     <select name="ciclo">
@@ -32,7 +31,7 @@
         <option value="1">1º</option>
         <option value="2">2º</option>
     </select><br><br>
-    <p>Fecha de entrega <input type="text" placeholder="Indica fecha" name="fecha"></p>
+    <p>Fecha de entrega <input type="date" placeholder="Indica fecha" name="fecha"></p>
     <input type="submit" name="alta" value="Alta">
     <input type="submit" name="baja" value="Baja">
     <input type="submit" name="mod" value="Modificación">
