@@ -3,7 +3,7 @@
 <div class="centro">
     <h2>Registro</h2>
     
-<form  method="POST">
+    <form  action="registro" method="POST">
     @csrf
     <p>Nombre completo<input type="text" name="nombre" placeholder="Nombre y apellidos"></p>
     <p>Usuario <input type="text" name="user" placeholder="Nombre de usuario"></p>

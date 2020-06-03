@@ -26,7 +26,7 @@ Route::get("profesor/download", "ControllerEmpresa@download");
 Route::get("administrador", "ControllerEmpresa@admin");
 Route::get("propuesta", "ControllerEmpresa@propuesta");
 Route::get("proyecto", "ControllerEmpresa@proyecto");
-Route::post("proyecto", "ProyectosController@manejarProyecto");
+Route::post("proyecto", "ProyectosController@guardarProyecto");
 Route::get("proyectoBD", "ControllerEmpresa@proyectoBD");
 
 

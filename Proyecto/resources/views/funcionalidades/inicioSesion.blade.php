@@ -3,7 +3,7 @@
 
 <div class="centro">
     <h2>Iniciar sesión</h2>
-    <form method="POST">
+    <form action="sesion" method="POST">
         @csrf
         <p>Usuario <input type="text" name="usuario" placeholder="Nombre de usuario"></p>
         <p>Contraseña <input type="password" name="contra" placeholder="Contraseña"></p>
